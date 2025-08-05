@@ -1,6 +1,6 @@
 # Discrete approach to machine learning
 
-This is the landing page of the article. Here you can find alternative versions of the article as well as the supplementary materials, model data files, like videos and high resolution images that were to big to be included in the article itself.
+This is the landing page of the article. Here you can find alternative versions of the article as well as the supplementary materials, model data files, like videos and high resolution images that were too big to be included in the article itself.
 
 ## Links
 
