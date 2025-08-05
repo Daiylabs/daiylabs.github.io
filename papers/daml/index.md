@@ -17,8 +17,8 @@ To be added (work in progress):
 The article explores an encoding and structural information processing approach using sparse bit vectors and fixed-length linear vectors.
 
 The following are presented:
-• A discrete method of speculative stochastic dimensionality reduction of multidimensional code and linear spaces with linear asymptotic complexity;
-• A geometric method for obtaining discrete embeddings of an organised code space that reflect the internal structure of a given modality.
+- A discrete method of speculative stochastic dimensionality reduction of multidimensional code and linear spaces with linear asymptotic complexity;
+- A geometric method for obtaining discrete embeddings of an organised code space that reflect the internal structure of a given modality.
 
 The structure and properties of a code space are investigated using three modalities as examples: morphology of Russian and English languages, and immunohistochemical markers.
 
