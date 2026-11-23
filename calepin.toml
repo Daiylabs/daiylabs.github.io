@@ -5,6 +5,10 @@ base-url = "https://daiylabs.com"
 theme = "themes/aucejo"
 theme-color = "#11304C"
 
+logo = "assets/images/logo.png"
+logo-alt = "Daiy Labs"
+favicon = "assets/images/favicon.png"
+
 # A marketing site does not need a PDF or the Typst source for every page.
 pdf = false
 typ = false
@@ -27,6 +31,8 @@ copyright = "© 2026 Daiy Labs"
 
 [static]
 include = ["assets/**"]
+# Keep the full-resolution logo source in the repo without publishing it.
+exclude = ["assets/images/grad-color.png"]
 
 [pages]
 include = ["posts/*.typ"]

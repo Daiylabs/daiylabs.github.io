@@ -15,7 +15,7 @@ Static website for [daiylabs.com](https://daiylabs.com), built with
 | `contacts.typ` | `/contacts.html` | Contacts (stub) |
 | `404.typ` | `/404.html` | Not-found page |
 | `posts/` | | Blog posts, included through `[pages]` in `calepin.toml` |
-| `assets/` | | Static files copied as-is |
+| `assets/` | | Static files copied as-is (`logo.png`, `favicon.png`, math font) |
 
 Site settings, navigation, and theme values live in `calepin.toml`.
 
@@ -45,6 +45,16 @@ not enabled; select it per page with:
 
 Pages use `description` in `<website-metadata>` for the header band, and no
 longer call `#title()`: the theme renders the page title from metadata.
+
+## Brand
+
+The site logo and favicon are derived from `assets/images/grad-color.png`:
+
+- `assets/images/logo.png` — 256×256, shown in the top bar
+- `assets/images/favicon.png` — 64×64 browser icon
+
+The full-resolution source stays in the repo but is excluded from the build
+(`[static] exclude` in `calepin.toml`).
 
 ## Commands
 
