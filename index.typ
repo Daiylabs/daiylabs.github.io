@@ -4,10 +4,8 @@
 #metadata((
   title: "About us",
   translation_key: "about",
-  summary: "An independent group of researchers approaching machine learning, natural and artificial intelligence from a different angle.",
+  description: "An independent group of researchers approaching machine learning, natural and artificial intelligence from a different angle.",
 )) <website-metadata>
-
-#title()
 
 We are an independent group of researchers trying to approach machine learning,
 natural and artificial intelligence from a different angle.

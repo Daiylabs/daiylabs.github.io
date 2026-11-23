@@ -105,10 +105,8 @@
 #metadata((
   title: "Blog",
   translation_key: "blog",
-  summary: "Notes on what we are working on right now, announcements, and short digests.",
+  description: "Notes on what we are working on right now, announcements, and short digests.",
 )) <website-metadata>
-
-#title()
 
 Notes on what we are working on right now, announcements, and short digests.
 All posts, sorted from newest to oldest.

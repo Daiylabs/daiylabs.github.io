@@ -1,8 +1,7 @@
 #import "/.calepin/calepin.typ" as calepin
 
 #set document(title: [Not found])
-
-#title()
+#metadata((title: "Not found")) <website-metadata>
 
 The requested page does not exist.
 

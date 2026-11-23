@@ -1,7 +1,9 @@
 title = "Daiy Labs"
 description = "An independent group of researchers approaching machine learning, natural and artificial intelligence from a different angle."
 base-url = "https://daiylabs.com"
-theme = "calepin"
+
+theme = "themes/aucejo"
+theme-color = "#11304C"
 
 # A marketing site does not need a PDF or the Typst source for every page.
 pdf = false
@@ -12,6 +14,16 @@ asset-dir = "_calepin"
 output-dir = "_site"
 
 default-language = "en"
+
+[toc]
+enabled = false
+
+# Values available to theme templates as {{ store.* }}.
+[store]
+name = "Daiy Labs"
+role = ["Independent research group", "Machine learning & intelligence"]
+tagline = "We are an independent group of researchers approaching machine learning, natural and artificial intelligence from a different angle."
+copyright = "© 2026 Daiy Labs"
 
 [static]
 include = ["assets/**"]
@@ -43,38 +55,6 @@ label = "Blog"
 target = "contacts.typ"
 label = "Contacts"
 
-[footer]
-
 [[footer.item]]
-target = "index.typ"
-label = "© Daiy Labs"
-
-[sidebar]
-fold = false
-
-[[sidebar.section]]
-title = "About"
-
-  [[sidebar.section.item]]
-  target = "index.typ"
-
-  [[sidebar.section.item]]
-  target = "team.typ"
-
-[[sidebar.section]]
-title = "Research"
-
-  [[sidebar.section.item]]
-  target = "papers.typ"
-
-  [[sidebar.section.item]]
-  target = "playground.typ"
-
-[[sidebar.section]]
-title = "Connect"
-
-  [[sidebar.section.item]]
-  target = "blog.typ"
-
-  [[sidebar.section.item]]
-  target = "contacts.typ"
+target = "https://vincentarelbundock.github.io/calepin"
+label = "Made with Calepin"
