@@ -1,0 +1,80 @@
+title = "Daiy Labs"
+description = "An independent group of researchers approaching machine learning, natural and artificial intelligence from a different angle."
+base-url = "https://daiylabs.com"
+theme = "calepin"
+
+# A marketing site does not need a PDF or the Typst source for every page.
+pdf = false
+typ = false
+
+# Dot-directories are not served by some static hosts (Netlify, GitHub Pages).
+asset-dir = "_calepin"
+output-dir = "_site"
+
+default-language = "en"
+
+[static]
+include = ["assets/**"]
+
+[pages]
+include = ["posts/*.typ"]
+
+[[menus.main]]
+target = "index.typ"
+label = "About"
+
+[[menus.main]]
+target = "team.typ"
+label = "Team"
+
+[[menus.main]]
+target = "papers.typ"
+label = "Papers"
+
+[[menus.main]]
+target = "playground.typ"
+label = "Playground"
+
+[[menus.main]]
+target = "blog.typ"
+label = "Blog"
+
+[[menus.main]]
+target = "contacts.typ"
+label = "Contacts"
+
+[footer]
+
+[[footer.item]]
+target = "index.typ"
+label = "© Daiy Labs"
+
+[sidebar]
+fold = false
+
+[[sidebar.section]]
+title = "About"
+
+  [[sidebar.section.item]]
+  target = "index.typ"
+
+  [[sidebar.section.item]]
+  target = "team.typ"
+
+[[sidebar.section]]
+title = "Research"
+
+  [[sidebar.section.item]]
+  target = "papers.typ"
+
+  [[sidebar.section.item]]
+  target = "playground.typ"
+
+[[sidebar.section]]
+title = "Connect"
+
+  [[sidebar.section.item]]
+  target = "blog.typ"
+
+  [[sidebar.section.item]]
+  target = "contacts.typ"
