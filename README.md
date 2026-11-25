@@ -10,12 +10,15 @@ Static website for [daiylabs.com](https://daiylabs.com), built with
 | `index.typ` | `/` | About us — the landing page |
 | `team.typ` | `/team.html` | The team (stub) |
 | `papers.typ` | `/papers.html` | Publications (stub) |
+| `gallery.typ` | `/gallery.html` | Full-resolution layout gallery |
 | `playground.typ` | `/playground.html` | Interactive experiments (stub) |
 | `blog.typ` | `/blog.html` | Blog listing |
 | `contacts.typ` | `/contacts.html` | Contacts (stub) |
 | `404.typ` | `/404.html` | Not-found page |
 | `posts/` | | Blog posts, included through `[pages]` in `calepin.toml` |
-| `assets/` | | Static files copied as-is (`logo.png`, `favicon.png`, math font) |
+| `_lib/` | | Typst helpers and generated data (not published) |
+| `scripts/` | | Build helpers (not published) |
+| `assets/` | | Static files copied as-is (brand, gallery, PhotoSwipe, math font) |
 
 Site settings, navigation, and theme values live in `calepin.toml`.
 
@@ -28,8 +31,10 @@ It provides:
 
 - `css/60_aucejo.css` — design tokens (crimson/navy palette, Inter fonts,
   light and dark modes) and the `mx-*` components
+- `css/70_gallery.css` — thumbnail grid and PhotoSwipe caption styling
 - `js/aucejo.js` — mobile nav, scroll reveal, and filters for publications,
   posts, and the table of contents
+- `js/gallery.js` — initializes PhotoSwipe when a `.mx-gallery` is present
 - `layouts/` — `site.html` for inner pages and `site-home.html` for an
   optional hero landing page
 - `partials/` — top bar, brand, page header, footer, and social links
@@ -55,6 +60,25 @@ The site logo and favicon are derived from `assets/images/grad-color.png`:
 
 The full-resolution source stays in the repo but is excluded from the build
 (`[static] exclude` in `calepin.toml`).
+
+## Gallery
+
+`gallery.typ` shows full-resolution figures from the DAML paper's code-space
+layout experiments. Thumbnails are 480 px JPEGs; the lossless PNGs (97 MB in
+total) are loaded only when a thumbnail is clicked, inside a zoomable
+PhotoSwipe lightbox.
+
+Regenerate the assets from the paper sources:
+
+```bash
+python3 scripts/prepare-gallery.py          # copy PNGs, build thumbnails
+python3 scripts/prepare-gallery.py --force  # rebuild everything
+```
+
+The script reads `~/work/papers/daml-paper/images` by default (override with
+`--source`), writes `assets/gallery/full/`, `assets/gallery/thumbs/`, and
+`_lib/gallery-images.json`. PhotoSwipe 5.4.4 is vendored in
+`assets/photoswipe/` (MIT, © Dmytro Semenov).
 
 ## Commands
 
@@ -85,8 +109,6 @@ Add a `.typ` file under `posts/` with post metadata:
   tags: ("research",),
   summary: "One-line summary shown in the listing.",
 )) <website-metadata>
-
-#title()
 
 Post body.
 ```
