@@ -36,6 +36,7 @@ exclude = ["assets/images/grad-color.png"]
 
 [pages]
 include = ["posts/*.typ"]
+exclude = ["_lib/**", "scripts/**"]
 
 [[menus.main]]
 target = "index.typ"
@@ -48,6 +49,10 @@ label = "Team"
 [[menus.main]]
 target = "papers.typ"
 label = "Papers"
+
+[[menus.main]]
+target = "gallery.typ"
+label = "Gallery"
 
 [[menus.main]]
 target = "playground.typ"

@@ -1,0 +1,64 @@
+// Gallery: open thumbnails in a zoomable PhotoSwipe lightbox.
+// PhotoSwipe is vendored under assets/photoswipe and loaded only when the
+// page actually contains a gallery.
+(() => {
+  "use strict";
+
+  function start() {
+    const first = document.querySelector(".mx-gallery");
+    if (!first) return;
+
+    const css = first.dataset.pswpCss;
+    if (css && !document.querySelector(`link[href="${css}"]`)) {
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = css;
+      document.head.appendChild(link);
+    }
+
+    const container = document.querySelector(".mx-main") || document.body;
+
+    import(first.dataset.pswpLightbox)
+      .then(({ default: PhotoSwipeLightbox }) => {
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: container,
+          children: "a.mx-gallery__item",
+          pswpModule: () => import(first.dataset.pswpModule),
+          wheelToZoom: true,
+          maxZoomLevel: 8,
+          bgOpacity: 0.96,
+          padding: { top: 40, bottom: 80, left: 20, right: 20 },
+        });
+
+        lightbox.on("uiRegister", () => {
+          lightbox.pswp.ui.registerElement({
+            name: "mx-caption",
+            order: 9,
+            isButton: false,
+            appendTo: "root",
+            html: "",
+            onInit: (el, pswp) => {
+              pswp.on("change", () => {
+                const item = pswp.currSlide?.data?.element;
+                const caption = item?.querySelector(".mx-gallery__caption-src");
+                const figure = item?.closest(".mx-gallery")?.dataset.label;
+                const text = caption ? caption.innerHTML : "";
+                el.innerHTML = figure ? `${figure} — ${text}` : text;
+              });
+            },
+          });
+        });
+
+        lightbox.init();
+      })
+      .catch((error) => {
+        console.error("PhotoSwipe failed to load", error);
+      });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start);
+  } else {
+    start();
+  }
+})();
