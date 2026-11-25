@@ -4,7 +4,8 @@
 #metadata((
   title: "Gallery",
   translation_key: "gallery",
-  description: "Full-resolution images from the code-space layout experiments in our DAML paper.",
+  description: "Full-resolution images from our experiments.",
+  toc: (enabled: true, depth: 3),
 )) <website-metadata>
 
 These are the full-resolution versions of the layout figures from our paper
@@ -121,7 +122,7 @@ cell proliferation (Ki67); activated B-lymphocytes (CD20); leukocytes (CD45).
 *b*: CD4 (blue) and PD-1 (cyan); *c, d*: separate CD4 and PD-1 channels,
 respectively.
 
-#gallery(columns: 4, label: "Marker channels")[
+#gallery(columns: 2, label: "Marker channels")[
   #photo("hist-cd4-cd8a", label: "a", note: [CD4 and CD8a])
   #photo("hist-cd4-pd1", label: "b", note: [CD4 and PD-1])
   #photo("hist-cd4", label: "c", note: [CD4])
