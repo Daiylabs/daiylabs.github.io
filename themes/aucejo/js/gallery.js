@@ -8,8 +8,13 @@
     const first = document.querySelector(".mx-gallery");
     if (!first) return;
 
-    const css = first.dataset.pswpCss;
-    if (css && !document.querySelector(`link[href="${css}"]`)) {
+    // Data attributes hold page-relative paths such as "assets/...".
+    // Dynamic import treats that as a bare specifier, so resolve it to an
+    // absolute URL first.
+    const url = (value) => new URL(value, document.baseURI).href;
+
+    const css = url(first.dataset.pswpCss);
+    if (!document.querySelector(`link[href="${css}"]`)) {
       const link = document.createElement("link");
       link.rel = "stylesheet";
       link.href = css;
@@ -17,13 +22,15 @@
     }
 
     const container = document.querySelector(".mx-main") || document.body;
+    const lightboxUrl = url(first.dataset.pswpLightbox);
+    const moduleUrl = url(first.dataset.pswpModule);
 
-    import(first.dataset.pswpLightbox)
+    import(lightboxUrl)
       .then(({ default: PhotoSwipeLightbox }) => {
         const lightbox = new PhotoSwipeLightbox({
           gallery: container,
           children: "a.mx-gallery__item",
-          pswpModule: () => import(first.dataset.pswpModule),
+          pswpModule: () => import(moduleUrl),
           wheelToZoom: true,
           maxZoomLevel: 8,
           bgOpacity: 0.96,
