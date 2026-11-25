@@ -1,0 +1,71 @@
+title = "Daiy Labs"
+description = "An independent group of researchers approaching machine learning, natural and artificial intelligence from a different angle."
+base-url = "https://daiylabs.com"
+
+theme = "themes/aucejo"
+theme-color = "#11304C"
+
+logo = "assets/images/logo.png"
+logo-alt = "Daiy Labs"
+favicon = "assets/images/favicon.png"
+
+# A marketing site does not need a PDF or the Typst source for every page.
+pdf = false
+typ = false
+
+# Dot-directories are not served by some static hosts (Netlify, GitHub Pages).
+asset-dir = "_calepin"
+output-dir = "_site"
+
+default-language = "en"
+
+[toc]
+enabled = false
+
+# Values available to theme templates as {{ store.* }}.
+[store]
+name = "Daiy Labs"
+role = ["Independent research group", "Machine learning & intelligence"]
+tagline = "We are an independent group of researchers approaching machine learning, natural and artificial intelligence from a different angle."
+copyright = "© 2026 Daiy Labs"
+
+[static]
+include = ["assets/**"]
+# Keep sources and notes in the repo without publishing them.
+exclude = ["assets/images/grad-color.png", "assets/photoswipe/README.md"]
+
+[pages]
+include = ["posts/*.typ"]
+exclude = ["_lib/**", "scripts/**"]
+
+[[menus.main]]
+target = "index.typ"
+label = "About"
+
+[[menus.main]]
+target = "team.typ"
+label = "Team"
+
+[[menus.main]]
+target = "papers.typ"
+label = "Papers"
+
+[[menus.main]]
+target = "gallery.typ"
+label = "Gallery"
+
+[[menus.main]]
+target = "playground.typ"
+label = "Playground"
+
+[[menus.main]]
+target = "blog.typ"
+label = "Blog"
+
+[[menus.main]]
+target = "contacts.typ"
+label = "Contacts"
+
+[[footer.item]]
+target = "https://vincentarelbundock.github.io/calepin"
+label = "Made with Calepin"

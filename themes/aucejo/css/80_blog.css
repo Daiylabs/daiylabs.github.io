@@ -1,0 +1,57 @@
+/* ==========================================================================
+   Blog — language filter and per-post language badges.
+   ========================================================================== */
+
+.mx-blog {
+  margin-top: 1.5rem;
+}
+
+.mx-blog-filters {
+  margin-bottom: 1rem;
+}
+
+.mx-blog table {
+  width: 100%;
+}
+
+.mx-blog tr[hidden] {
+  display: none;
+}
+
+.mx-blog__lang {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.05rem 0.45rem;
+  border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+  border-radius: 999px;
+  font-family: var(--calepin-font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  vertical-align: 0.1em;
+}
+
+.mx-blog__lang[data-lang="en"] {
+  color: var(--mx-navy);
+  background: color-mix(in srgb, var(--mx-navy) 7%, transparent);
+}
+
+.mx-blog__lang[data-lang="ru"] {
+  color: var(--mx-crimson);
+  background: color-mix(in srgb, var(--mx-crimson) 8%, transparent);
+}
+
+html[data-theme="dark"] .mx-blog__lang[data-lang="en"] {
+  color: #8fb3cc;
+}
+
+.mx-blog-empty {
+  margin: 0.5rem 0 0;
+  color: var(--calepin-color-muted);
+  font-size: 0.9rem;
+}
+
+.mx-blog-empty[hidden] {
+  display: none;
+}

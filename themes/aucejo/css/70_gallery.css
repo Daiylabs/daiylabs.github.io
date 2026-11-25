@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Gallery — thumbnails that open lossless PNGs in a PhotoSwipe lightbox.
+   ========================================================================== */
+
+.mx-gallery {
+  display: grid;
+  gap: 0.9rem;
+  align-items: start;
+  margin: 1.25rem 0 2rem;
+}
+
+.mx-gallery__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  border: 1px solid var(--calepin-color-border);
+  border-radius: var(--calepin-radius-md);
+  background: var(--calepin-surface);
+  box-shadow: var(--calepin-shadow-card);
+  color: var(--calepin-color-text);
+  text-decoration: none !important;
+  overflow: hidden;
+  transition: transform 220ms var(--mx-ease), border-color 220ms ease,
+    box-shadow 220ms var(--mx-ease);
+}
+
+.mx-gallery__item:hover,
+.mx-gallery__item:focus-visible {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--calepin-color-accent) 45%, var(--calepin-color-border));
+  box-shadow: var(--mx-shadow-hover);
+}
+
+.mx-gallery__thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.mx-gallery__label {
+  position: absolute;
+  top: 0.45rem;
+  left: 0.45rem;
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.4rem;
+  height: 1.4rem;
+  padding: 0 0.35rem;
+  border-radius: 0.35rem;
+  background: color-mix(in srgb, var(--calepin-color-text) 82%, transparent);
+  color: var(--calepin-color-background);
+  font-family: var(--calepin-font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1;
+  backdrop-filter: blur(4px);
+}
+
+.mx-gallery__note {
+  padding: 0.5rem 0.65rem;
+  color: var(--calepin-color-muted);
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.mx-gallery__caption-src {
+  display: none;
+}
+
+/* PhotoSwipe caption, registered by themes/aucejo/js/gallery.js. */
+.pswp__mx-caption {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  z-index: 10;
+  width: calc(100% - 2rem);
+  max-width: 48rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: var(--calepin-radius-md);
+  background: rgb(10 15 22 / 0.82);
+  color: #f3f5f8;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  text-align: center;
+  transform: translateX(-50%);
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+}
+
+.pswp__mx-caption:empty {
+  display: none;
+}
+
+/* Once the user zooms past the fit level, show the map's pixels sharply. */
+.pswp.mx-zoomed .pswp__img {
+  image-rendering: pixelated;
+}
+
+@media (max-width: 64rem) {
+  .mx-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .mx-gallery {
+    grid-template-columns: 1fr !important;
+  }
+}
