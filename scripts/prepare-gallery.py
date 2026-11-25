@@ -46,7 +46,6 @@ MORPHOLOGY = [
     "ru-layout-after-patch",
     "ru-relayout-after-patch",
     "ru-layout-after-table-codes",
-    "ru-layout-final",
 ]
 
 # Histochemistry section, chapter 7.

@@ -64,9 +64,10 @@ The full-resolution source stays in the repo but is excluded from the build
 ## Gallery
 
 `gallery.typ` shows full-resolution figures from the DAML paper's code-space
-layout experiments. Thumbnails are 480 px JPEGs; the lossless PNGs (97 MB in
-total) are loaded only when a thumbnail is clicked, inside a zoomable
-PhotoSwipe lightbox.
+layout experiments. Thumbnails are 480 px JPEGs; the lossless PNGs (94 MB in
+total, 32 files) are loaded only when a thumbnail is clicked, inside a zoomable
+PhotoSwipe lightbox. The final result reuses the full-resolution re-layout
+image, as the paper's final view is a reduced derivative of it.
 
 Regenerate the assets from the paper sources:
 
