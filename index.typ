@@ -1,17 +1,19 @@
-#import "/.calepin/calepin.typ" as calepin
+#import "/_calepin/calepin.typ" as calepin
 
 #set document(title: [About us])
 #metadata((
-  title: "About us",
-  translation_key: "about",
-  description: "An independent group of researchers approaching machine learning, natural and artificial intelligence from a different angle.",
+  title: "Daiy Labs",
+  translation_key: "index",
+  description: "Have a nice dȧy!",
 )) <website-metadata>
+
+= About us
 
 We are an independent group of researchers trying to approach machine learning,
 natural and artificial intelligence from a different angle.
 
 We have spent more than 10 years of our lives on it, so it better be something
-genuinely interesting. And boy it is!
+genuinely interesting. And boy it is! Check out the gallery and the playground, they're awesome.
 
 So far we have published #link("https://arxiv.org/abs/2508.00869")[our first
 paper] in 2025, with more to come.
