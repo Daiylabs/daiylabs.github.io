@@ -123,6 +123,17 @@ not configured as Calepin `[languages]`; `lang` is ordinary page metadata,
 which keeps the single-tree layout while still allowing per-language
 filtering.
 
+## Deployment
+
+Pushes to `main` build the site and deploy `_site/` to GitHub Pages through
+`.github/workflows/pages.yml`. The site is published at
+[https://daiylabs.com](https://daiylabs.com); the custom domain is configured
+in the repository's Pages settings.
+
+The workflow pins Typst 0.15.1 and Calepin 0.0.63 to match the local
+toolchain. To deploy without changing the source, run the **Deploy to GitHub
+Pages** workflow manually from the Actions tab.
+
 ## Generated files
 
 `.calepin/`, `_calepin/`, `_site/`, and `.calepin-entry.*` are build artifacts
