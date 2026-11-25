@@ -36,8 +36,6 @@
   display: block;
   width: 100%;
   height: auto;
-  /* Rendering these maps at their native pixel grid avoids blurry clusters. */
-  image-rendering: pixelated;
 }
 
 .mx-gallery__label {
@@ -92,6 +90,11 @@
 
 .pswp__mx-caption:empty {
   display: none;
+}
+
+/* Once the user zooms past the fit level, show the map's pixels sharply. */
+.pswp.mx-zoomed .pswp__img {
+  image-rendering: pixelated;
 }
 
 @media (max-width: 64rem) {

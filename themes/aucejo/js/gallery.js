@@ -30,6 +30,13 @@
           padding: { top: 40, bottom: 80, left: 20, right: 20 },
         });
 
+        lightbox.on("zoomPanUpdate", () => {
+          const pswp = lightbox.pswp;
+          if (!pswp?.element) return;
+          const zoomed = (pswp.currSlide?.currZoomLevel || 1) > 1.01;
+          pswp.element.classList.toggle("mx-zoomed", zoomed);
+        });
+
         lightbox.on("uiRegister", () => {
           lightbox.pswp.ui.registerElement({
             name: "mx-caption",
