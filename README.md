@@ -106,13 +106,22 @@ Add a `.typ` file under `posts/` with post metadata:
 #metadata((
   title: "Post title",
   kind: "post",
-  date: "2026-11-23",
-  tags: ("research",),
+  lang: "en",                      # "en" or "ru"
+  date: "2026-11-23T18:00:00+05:00",
+  slug: "post-title",
+  translation_key: "post-title",   # shared by translated versions
   summary: "One-line summary shown in the listing.",
 )) <website-metadata>
 
 Post body.
 ```
+
+The listing shows the language badge (EN/RU), formats the ISO timestamp as
+`23 Nov 2026, 18:00`, and has an All / English / Русский filter. The filter
+state is kept in `#lang=en|ru` so a filtered view can be linked to. Posts are
+not configured as Calepin `[languages]`; `lang` is ordinary page metadata,
+which keeps the single-tree layout while still allowing per-language
+filtering.
 
 ## Generated files
 
