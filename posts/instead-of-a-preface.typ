@@ -26,3 +26,6 @@ Supplementary materials:
 We are on YouTube:
 #link("https://youtube.com/playlist?list=PLrIfOs8n6avYjKNpm6SNY-J3jMKfr5tSY")[playlist] \
 Our X: #link("https://x.com/0x7cfe")[\@0x7cfe]
+
+_This note is also available in Russian:_
+#link("vmesto-predisloviya.html")[Вместо предисловия].

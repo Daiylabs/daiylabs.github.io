@@ -27,3 +27,6 @@
 Мы на YouTube:
 #link("https://youtube.com/playlist?list=PLrIfOs8n6avYjKNpm6SNY-J3jMKfr5tSY")[плейлист] \
 Наш X: #link("https://x.com/0x7cfe")[\@0x7cfe]
+
+_Эта заметка также доступна на английском:_
+#link("instead-of-a-preface.html")[Instead of a preface].
