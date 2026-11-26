@@ -1,4 +1,5 @@
 #import "/_lib/gallery.typ": gallery, photo
+// #import "/_calepin/blog/calepin.typ" as calepin
 
 #set document(title: [Gallery])
 #metadata((
@@ -8,8 +9,7 @@
   toc: (enabled: true, depth: 3),
 )) <website-metadata>
 
-These are the full-resolution versions of the layout figures from
-#link("https://arxiv.org/abs/2508.00869")[our first paper].
+These are the full-resolution versions of the layout figures from our first paper #link("https://arxiv.org/abs/2508.00869")[arxiv:2508.00869].
 
 The PNGs are lossless copies of the originals, so you can zoom in and inspect
 individual clusters and pinwheels at pixel level. Click any thumbnail to open
@@ -21,6 +21,10 @@ keys to move between images.
 The layout was performed on a code space built from the Tatoeba corpus. The
 figures below follow the process described in the Practice chapter, from the
 preliminary layout through several rounds of code fixes and re-layouts.
+
+#calepin.elements.callout(kind: "note", title: none)[
+  Check out figure *e* in every group, they are the most detailed and beautiful.
+]
 
 == Preliminary layout
 
@@ -131,5 +135,4 @@ respectively.
 ]
 
 The complete study, including the annotated layout and its discussion, is
-available as the preprint
-#link("https://arxiv.org/abs/2508.00869")[A discrete approach to machine learning].
+available at #link("https://arxiv.org/abs/2508.00869")[arxiv:2508.00869].

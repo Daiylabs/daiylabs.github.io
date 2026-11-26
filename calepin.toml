@@ -43,6 +43,10 @@ target = "index.typ"
 label = "Home"
 
 [[menus.main]]
+target = "blog.typ"
+label = "Blog"
+
+[[menus.main]]
 target = "papers.typ"
 label = "Papers"
 
@@ -53,10 +57,6 @@ label = "Gallery"
 [[menus.main]]
 target = "playground.typ"
 label = "Playground"
-
-[[menus.main]]
-target = "blog.typ"
-label = "Blog"
 
 [[menus.main]]
 target = "team.typ"
