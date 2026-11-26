@@ -1,7 +1,7 @@
 #set document(title: [Papers])
 #metadata((
-  title: "Papers",
-  translation_key: "papers",
+  title: "Publications",
+  translation_key: "publications",
   description: "Our publications and preprints.",
 )) <website-metadata>
 

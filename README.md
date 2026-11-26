@@ -9,7 +9,7 @@ Static website for [daiylabs.com](https://daiylabs.com), built with
 |---|---|---|
 | `index.typ` | `/` | About us — the landing page |
 | `team.typ` | `/team.html` | The team (stub) |
-| `papers.typ` | `/papers.html` | Publications (stub) |
+| `publications.typ` | `/publications.html` | Publications (stub) |
 | `gallery.typ` | `/gallery.html` | Full-resolution layout gallery |
 | `playground.typ` | `/playground.html` | Interactive experiments (stub) |
 | `blog.typ` | `/blog.html` | Blog listing |

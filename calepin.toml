@@ -48,8 +48,8 @@ target = "blog.typ"
 label = "Blog"
 
 [[menus.main]]
-target = "papers.typ"
-label = "Papers"
+target = "publications.typ"
+label = "Publications"
 
 [[menus.main]]
 target = "gallery.typ"
