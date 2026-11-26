@@ -32,4 +32,4 @@
 ]
 
 _Эта заметка также доступна на английском:_
-#link("morphology-video-en.html")[Morphology of the Russian Language].
+#link("morphology-video-en.html")[Russian Morphology].
