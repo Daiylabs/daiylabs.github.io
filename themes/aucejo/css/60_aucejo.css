@@ -206,6 +206,22 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.01em;
 }
 
+.mx-brand-textwrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+  line-height: 1.15;
+}
+
+.mx-brand-slogan {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--calepin-color-muted);
+  white-space: nowrap;
+}
+
 .mx-brand-logo.calepin-site-logo {
   width: 2rem;
   height: 2rem;

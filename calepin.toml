@@ -25,9 +25,10 @@ enabled = false
 # Values available to theme templates as {{ store.* }}.
 [store]
 name = "Daiy Labs"
+slogan = "Beyond the asymptote."
 role = ["Independent research group", "Machine learning & intelligence"]
 tagline = "We are an independent group of researchers approaching machine learning, natural and artificial intelligence from a different angle."
-copyright = "© 2026 Daiy Labs"
+copyright = "© 2025-2026 Daiy Labs"
 
 [static]
 include = ["assets/**"]

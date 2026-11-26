@@ -9,9 +9,9 @@
 
 = About us
 
-We are an independent team of researchers trying to approach machine learning, natural and artificial intelligence from a different angle. We have spent more than 10 years of our lives on it, so it better be something genuinely interesting. And boy it is!
+We are an independent #link("team.html")[team of researchers] trying to approach machine learning, natural and artificial intelligence from a different angle. We have spent more than 10 years of our lives on it, so it better be something genuinely interesting. And boy it is!
 
-So far we have published #link("https://arxiv.org/abs/2508.00869")[our first paper] in 2025, with more to come. Also, check out the gallery and the playground, they're awesome.
+So far we have published #link("https://arxiv.org/abs/2508.00869")[our first paper] in 2025, with more to come. Also, check out #link("gallery.html")[the gallery] and #link("playground.html")[the playground], they're awesome.
 
 We are self funding our research, and now looking for ways to finally make it profitable. This site is one of the steps toward this goal.
 
