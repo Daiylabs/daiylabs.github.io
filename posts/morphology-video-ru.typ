@@ -5,6 +5,7 @@
   lang: "ru",
   date: "2025-08-30T00:50:00+05:00",
   slug: "morphology-video-ru",
+  translation_key: "morphology-video",
   summary: "Попытка описать подход к морфологии «на пальцах»",
   description: "Морфология русского языка: на пальцах и без формул.",
 )) <website-metadata>
@@ -29,3 +30,6 @@
     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
   ))
 ]
+
+_Эта заметка также доступна на английском:_
+#link("morphology-video-en.html")[Morphology of the Russian Language].
