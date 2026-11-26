@@ -40,11 +40,7 @@ exclude = ["_lib/**", "scripts/**"]
 
 [[menus.main]]
 target = "index.typ"
-label = "About"
-
-[[menus.main]]
-target = "team.typ"
-label = "Team"
+label = "Home"
 
 [[menus.main]]
 target = "papers.typ"
@@ -61,6 +57,10 @@ label = "Playground"
 [[menus.main]]
 target = "blog.typ"
 label = "Blog"
+
+[[menus.main]]
+target = "team.typ"
+label = "Team"
 
 [[menus.main]]
 target = "contacts.typ"

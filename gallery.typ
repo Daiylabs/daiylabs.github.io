@@ -8,8 +8,9 @@
   toc: (enabled: true, depth: 3),
 )) <website-metadata>
 
-These are the full-resolution versions of the layout figures from our paper
-#link("https://arxiv.org/abs/2508.00869")[A discrete approach to machine learning].
+These are the full-resolution versions of the layout figures from
+#link("https://arxiv.org/abs/2508.00869")[our first paper].
+
 The PNGs are lossless copies of the originals, so you can zoom in and inspect
 individual clusters and pinwheels at pixel level. Click any thumbnail to open
 it; use the mouse wheel or a pinch gesture to zoom, drag to pan, and the arrow

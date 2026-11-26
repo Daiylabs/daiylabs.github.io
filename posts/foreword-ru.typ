@@ -4,9 +4,9 @@
   kind: "post",
   lang: "ru",
   date: "2025-08-29T21:20:00+05:00",
-  slug: "vmesto-predisloviya",
-  translation_key: "instead-of-a-preface",
-  summary: "Зачем мы ведём этот блог и какие вопросы исследуем.",
+  slug: "foreword-ru",
+  translation_key: "foreword",
+  summary: "Об этом блоге",
   description: "Заметки о ходе наших исследований: смысл, структура, семантика и роль памяти в мышлении.",
 )) <website-metadata>
 
@@ -20,13 +20,13 @@
 мышлении? Как происходит процесс мыслеобразования? Эти и другие вопросы мы
 изучаем на практике, подглядывая в устройство реальных мозгов и строя модели.
 
-Наша первая статья на arXiv:
-#link("https://arxiv.org/abs/2508.00869")[arxiv.org/abs/2508.00869] \
+Наша первая статья:
+#link("https://arxiv.org/abs/2508.00869")[arxiv:2508.00869] \
 Дополнительные материалы:
 #link("https://daiylabs.com/papers/daml/")[daiylabs.com/papers/daml] \
 Мы на YouTube:
-#link("https://youtube.com/playlist?list=PLrIfOs8n6avYjKNpm6SNY-J3jMKfr5tSY")[плейлист] \
+#link("https://youtube.com/playlist?list=PLrIfOs8n6avYjKNpm6SNY-J3jMKfr5tSY")[Код, контексты, смысл] \
 Наш X: #link("https://x.com/0x7cfe")[\@0x7cfe]
 
 _Эта заметка также доступна на английском:_
-#link("instead-of-a-preface.html")[Instead of a preface].
+#link("foreword-en.html")[Foreword].
