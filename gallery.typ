@@ -9,7 +9,7 @@
   toc: (enabled: true, depth: 3),
 )) <website-metadata>
 
-These are the full-resolution versions of the layout figures from our first paper #link("https://arxiv.org/abs/2508.00869")[arxiv:2508.00869].
+These are the full-resolution versions of the layout figures from our first paper #link("https://arxiv.org/abs/2508.00869")[arXiv:2508.00869].
 
 The PNGs are lossless copies of the originals, so you can zoom in and inspect
 individual clusters and pinwheels at pixel level. Click any thumbnail to open
@@ -135,4 +135,4 @@ respectively.
 ]
 
 The complete study, including the annotated layout and its discussion, is
-available at #link("https://arxiv.org/abs/2508.00869")[arxiv:2508.00869].
+available at #link("https://arxiv.org/abs/2508.00869")[arXiv:2508.00869].

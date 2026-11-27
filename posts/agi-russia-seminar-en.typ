@@ -13,7 +13,7 @@
 #set text(lang: "en")
 
 A recording of the AGI Russia seminar where we presented our paper:
-#link("https://arxiv.org/abs/2508.00869")[arxiv:2508.00869].
+#link("https://arxiv.org/abs/2508.00869")[arXiv:2508.00869].
 
 #calepin.elements.callout(kind: "note", title: [Tip])[
   You may want to turn on the subtitles and enable their automatic translation.

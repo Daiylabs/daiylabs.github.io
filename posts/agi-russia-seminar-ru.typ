@@ -13,7 +13,7 @@
 #set text(lang: "ru")
 
 Запись семинара AGI Russia, где мы презентовали нашу статью:
-#link("https://arxiv.org/abs/2508.00869")[arxiv:2508.00869].
+#link("https://arxiv.org/abs/2508.00869")[arXiv:2508.00869].
 
 #html.elem("div", attrs: (class: "mx-video"))[
   #html.elem("iframe", attrs: (

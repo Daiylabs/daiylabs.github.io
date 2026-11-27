@@ -20,7 +20,7 @@ We study these and other questions in practice, peeking into the structure of
 real brains and building models.
 
 Our first paper:
-#link("https://arxiv.org/abs/2508.00869")[arxiv:2508.00869] \
+#link("https://arxiv.org/abs/2508.00869")[arXiv:2508.00869] \
 Extra materials:
 #link("https://daiylabs.com/papers/daml/")[daiylabs.com/papers/daml] \
 Our YouTube:

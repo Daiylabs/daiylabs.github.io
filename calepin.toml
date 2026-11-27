@@ -36,12 +36,12 @@ include = ["assets/**"]
 exclude = ["assets/images/grad-color.png", "assets/photoswipe/README.md"]
 
 [pages]
-include = ["posts/*.typ"]
+include = ["posts/*.typ", "papers/**/*.typ"]
 exclude = ["_lib/**", "scripts/**"]
 
-[[menus.main]]
-target = "index.typ"
-label = "Home"
+# [[menus.main]]
+# target = "index.typ"
+# label = "Home"
 
 [[menus.main]]
 target = "blog.typ"

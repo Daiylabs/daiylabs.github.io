@@ -14,7 +14,7 @@
 
 Here I explain, in plain terms and without formulas, our approach to building
 morphological embeddings of the Russian language. All of this is described in
-the seventh chapter of our first paper: #link("https://arxiv.org/abs/2508.00869")[arxiv:2508.00869].
+the seventh chapter of our first paper: #link("https://arxiv.org/abs/2508.00869")[arXiv:2508.00869].
 
 At the time this video was recorded, the paper did not exist yet, so the space
 used was the one that had been computed at that point.

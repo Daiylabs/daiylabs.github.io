@@ -21,7 +21,7 @@
 изучаем на практике, подглядывая в устройство реальных мозгов и строя модели.
 
 Наша первая статья:
-#link("https://arxiv.org/abs/2508.00869")[arxiv:2508.00869] \
+#link("https://arxiv.org/abs/2508.00869")[arXiv:2508.00869] \
 Дополнительные материалы:
 #link("https://daiylabs.com/papers/daml/")[daiylabs.com/papers/daml] \
 Мы на YouTube:

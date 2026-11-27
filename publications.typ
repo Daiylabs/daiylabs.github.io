@@ -5,9 +5,12 @@
   description: "Papers, slides, sources, media, etc.",
 )) <website-metadata>
 
+#import "/_lib/publications.typ": *
+
 Here we'll be collecting all published materials related to our research.
 
 = Papers
 
-Our first paper is already out:
-#link("https://arxiv.org/abs/2508.00869")[arxiv:2508.00869].
+#cards(columns: 3)[
+  #card("papers/daml/", "/assets/images/logo.png", "Discrete approach to machine learning, arXiv:2508.00869")
+]
