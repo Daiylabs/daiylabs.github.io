@@ -163,7 +163,8 @@
   description: "Everything about our research.",
 )) <website-metadata>
 
-Semi-organized collection of everything related to our research: work notes, news, announcements, thoughts and insights. For more structured content see #link("/publications.html")[Publications].
+Semi-organized and oppinionated collection of everything related to our research: work notes, news, announcements, thoughts and insights.
+For more structured content see #link("/publications.html")[Publications].
 
 We publish in English and Russian, and the two versions may differ. Use the
 filter below to show one language or both.
